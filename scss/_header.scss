@@ -1,0 +1,65 @@
+header {
+	background: url(../images/main-background.png);
+	background-size: cover;
+	background-position: center;
+
+	.main-menu {
+		height: 40px;
+		padding: 10px 20px;
+		font-size: 1.2em;
+		font-weight: 700;
+		text-transform: uppercase;
+
+		ul {
+			display: inline-flex;
+
+			li {
+				margin-right: 20px;
+
+				a.hover-cyan:hover {
+					color: $cyan;
+				}
+
+				a.hover-magenta:hover {
+					color: $magenta;
+				}
+
+				a.hover-yellow:hover {
+					color: $yellow;
+				}
+			}
+		}
+	}
+
+	#big-title {
+		min-height: calc(100vh - 40px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		h1 {
+			display: inline-block;
+			text-align: left;
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 10vw;
+			line-height: 8vw;
+
+			.random-cmyk {
+				transition: color .25s ease !important;
+			}
+
+			.cyan {
+				color: $cyan;
+			}
+
+			.magenta {
+				color: $magenta;
+			}
+
+			.yellow {
+				color: $yellow;
+			}
+		}
+	}
+}
