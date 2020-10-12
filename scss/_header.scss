@@ -2,13 +2,18 @@ header {
 	background: url(../images/main-background.png);
 	background-size: cover;
 	background-position: center;
+	position: relative;
 
 	.main-menu {
 		height: 40px;
 		padding: 10px 20px;
-		font-size: 1.2em;
+		font-size: 1em;
 		font-weight: 700;
 		text-transform: uppercase;
+
+		@include mediumScreen {
+			font-size: 1.2em;
+		}
 
 		ul {
 			display: inline-flex;
@@ -32,7 +37,8 @@ header {
 	}
 
 	#big-title {
-		min-height: calc(100vh - 40px);
+		min-height: 100vh;
+		margin-top: -40px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -42,8 +48,18 @@ header {
 			text-align: left;
 			font-weight: 700;
 			text-transform: uppercase;
-			font-size: 10vw;
-			line-height: 8vw;
+			font-size: 17vw;
+			line-height: 15vw;
+
+			@include mediumScreen {
+				font-size: 13vw;
+				line-height: 11vw;
+			}
+
+			@include largeScreen {
+				font-size: 8vw;
+				line-height: 6vw;
+			}
 
 			.random-cmyk {
 				transition: color .25s ease !important;
