@@ -1,25 +1,25 @@
 header {
-	background: url(../images/main-background.png);
+	position: relative;
+	background: url(../images/main-background.png) $bg-color;
 	background-size: cover;
 	background-position: center;
-	position: relative;
+	background-attachment: fixed;
 
 	.main-menu {
-		height: 40px;
 		padding: 10px 20px;
 		font-size: 1em;
 		font-weight: 700;
 		text-transform: uppercase;
-
-		@include mediumScreen {
-			font-size: 1.2em;
-		}
 
 		ul {
 			display: inline-flex;
 
 			li {
 				margin-right: 20px;
+
+				a, a:link, a:visited {
+					color: $bg-color;
+				}
 
 				a.hover-cyan:hover {
 					color: $cyan;
@@ -37,11 +37,11 @@ header {
 	}
 
 	#big-title {
-		min-height: 100vh;
-		margin-top: -40px;
+		min-height: calc(100vh - 45px);
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		color: $bg-color;
 
 		h1 {
 			display: inline-block;
