@@ -7,3 +7,21 @@ $magenta: #ec008c;
 $yellow: #fff200;
 
 /* MIXINS */
+
+@mixin random-cmyk {
+.random-cmyk {
+				transition: color .25s ease !important;
+			}
+
+			.cyan {
+				color: $cyan;
+			}
+
+			.magenta {
+				color: $magenta;
+			}
+
+			.yellow {
+				color: $yellow;
+			}
+	}

@@ -4,7 +4,17 @@ $(document).ready(function() {
     setInterval(
         function() {
             let colours = ['#00aeef', '#fff200', '#ec008c'];
-            document.querySelectorAll('.random-cmyk').forEach(function(ele) {
+            document.querySelectorAll('#big-title .random-cmyk').forEach(function(ele) {
+                const colIndex = Math.floor(Math.random() * colours.length);
+                ele.style.color = colours[colIndex];
+                colours.splice(colIndex, 1);
+            });
+        }, 1000);
+
+    setInterval(
+        function() {
+            let colours = ['#00aeef', '#fff200', '#ec008c'];
+            document.querySelectorAll('#big-title-but-small .random-cmyk').forEach(function(ele) {
                 const colIndex = Math.floor(Math.random() * colours.length);
                 ele.style.color = colours[colIndex];
                 colours.splice(colIndex, 1);

@@ -12,39 +12,68 @@ header {
 		text-transform: uppercase;
 		display: flex;
 		justify-content: space-between;
+		height: 50px;
 
 		.main-menu-left,
 		.main-menu-right {
-			display: inline-block;
+			display: flex;
 		}
 
-		ul {
-			display: inline-flex;
+		.main-menu-left {
+			.main-menu-left-1 {
+				margin-right: 30px;
+				padding-right: 30px;
+				border-right: 2px solid $bg-color;
 
-			li {
-				margin-right: 20px;
-
-				a, a:link, a:visited {
+				#big-title-but-small {
 					color: $bg-color;
-				}
 
-				a.hover-cyan:hover {
-					color: $cyan;
-				}
+					h1 {
+						display: inline-block;
+						text-align: left;
+						font-weight: 700;
+						text-transform: uppercase;
+						font-size: 1.1rem;
+						line-height: 1rem;
 
-				a.hover-magenta:hover {
-					color: $magenta;
+						@include random-cmyk;
+					}
 				}
+			}
 
-				a.hover-yellow:hover {
-					color: $yellow;
+			.main-menu-left-2 {
+				display: flex;
+
+				ul {
+					display: flex;
+					align-items: center;
+
+					li {
+						margin-right: 20px;
+
+						a, a:link, a:visited {
+							color: $bg-color;
+						}
+
+						a.hover-cyan:hover {
+							color: $cyan;
+						}
+
+						a.hover-magenta:hover {
+							color: $magenta;
+						}
+
+						a.hover-yellow:hover {
+							color: $yellow;
+						}
+					}
 				}
 			}
 		}
 	}
 
 	#big-title {
-		min-height: calc(100vh - 45px);
+		min-height: calc(100vh - 50px);
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -68,21 +97,7 @@ header {
 				line-height: 6.5vw;
 			}
 
-			.random-cmyk {
-				transition: color .25s ease !important;
-			}
-
-			.cyan {
-				color: $cyan;
-			}
-
-			.magenta {
-				color: $magenta;
-			}
-
-			.yellow {
-				color: $yellow;
-			}
+			@include random-cmyk;
 		}
 	}
 }
