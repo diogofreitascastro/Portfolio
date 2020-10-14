@@ -10,6 +10,13 @@ header {
 		font-size: 1em;
 		font-weight: 700;
 		text-transform: uppercase;
+		display: flex;
+		justify-content: space-between;
+
+		.main-menu-left,
+		.main-menu-right {
+			display: inline-block;
+		}
 
 		ul {
 			display: inline-flex;
