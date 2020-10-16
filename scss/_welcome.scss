@@ -1,5 +1,10 @@
 header {
 	.landing-wrapper {
+
+		* {
+			text-align: left;
+		}
+
 		height: 400px;
 		max-width: 500px;
 		margin: auto;
@@ -11,7 +16,7 @@ header {
 
 		@include mediumScreen {
 			padding: 0 100px;
-			max-width: 1200px;
+			max-width: 1400px;
 		}
 
 		@include largeScreen {
@@ -19,8 +24,28 @@ header {
 			margin: -100px auto;
 		}
 
-		* {
-			text-align: left;
+		h1#name {
+			font-size: 3rem;
+			line-height: 3rem;
+			margin-bottom: 10px;
+		}
+
+		a#hire-me {
+			div {
+				margin-top: 30px;
+				display: inline-block;
+				padding: 20px;
+				border-radius: 100px;
+				background: $bloo;
+				color: $bg-color;
+				width: 150px;
+				text-align: center;
+				font-weight: 700;
+
+				&:hover {
+					background: $text-color;
+				}
+			}
 		}
 	}
 }
