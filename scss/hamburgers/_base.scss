@@ -18,6 +18,8 @@
   margin: 0;
   overflow: visible;
 
+  outline: none; /* NO OUTLINE */
+
   &:hover {
     @if $hamburger-hover-use-filter == true {
       filter: $hamburger-hover-filter;
