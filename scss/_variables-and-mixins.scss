@@ -5,6 +5,11 @@ $bg-color: #f1f1f1;
 $cyan: #00aeef;
 $magenta: #ec008c;
 $yellow: #fff200;
+$bloo: #a1ccdd;
+
+$header-height: 100px;
+
+$post-height: 500px;
 
 /* MIXINS */
 
@@ -24,4 +29,35 @@ $yellow: #fff200;
 			.yellow {
 				color: $yellow;
 			}
+	}
+
+	@mixin cmyk-ul-li-a-hovers {
+		ul {
+					display: flex;
+					align-items: center;
+
+					li {
+						margin-right: 20px;
+
+						a, a:link, a:visited {
+							color: $bg-color;
+						}
+
+						a.hover-cyan:hover {
+							color: $cyan;
+						}
+
+						a.hover-magenta:hover {
+							color: $magenta;
+						}
+
+						a.hover-yellow:hover {
+							color: $yellow;
+						}
+
+						&:last-child {
+							margin: 0;
+						}
+					}
+				}
 	}
