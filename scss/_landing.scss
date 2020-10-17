@@ -9,7 +9,7 @@ header {
 			text-align: left;
 		}
 
-		height: 400px;
+		height: calc(100vh - 90px);
 		max-width: 500px;
 		margin: auto;
 		padding: 0 30px;
@@ -19,12 +19,12 @@ header {
 		position: relative;
 
 		@include mediumScreen {
+			height: calc(100vh - 100px);
 			padding: 0 100px;
 			max-width: 1500px;
 		}
 
 		@include largeScreen {
-			height: calc(100vh - 100px);
 			padding-bottom: 100px;
 		}
 
