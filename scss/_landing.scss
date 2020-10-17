@@ -20,7 +20,7 @@ header {
 
 		@include mediumScreen {
 			padding: 0 100px;
-			max-width: 1400px;
+			max-width: 1500px;
 		}
 
 		@include largeScreen {
@@ -29,22 +29,37 @@ header {
 		}
 
 		h1#name {
-			font-size: 3rem;
-			line-height: 3rem;
+			font-size: 2rem;
+			line-height: 2rem;
 			margin-bottom: 10px;
+
+			@include mediumScreen {
+				font-size: 3rem;
+				line-height: 3rem;
+			}
+
+			@include largeScreen {
+				font-size: 4rem;
+				line-height: 4rem;
+			}
 		}
 
 		a#hire-me {
 			div {
-				margin-top: 30px;
+				margin-top: 40px;
 				display: inline-block;
-				padding: 20px;
+				padding: 15px;
 				border-radius: 100px;
 				background: $text-color;
 				color: $bg-color;
-				width: 150px;
+				width: 120px;
 				text-align: center;
 				font-weight: 700;
+
+				@include mediumScreen {
+					padding: 20px;
+					width: 150px
+				}
 
 				&:hover {
 					background: $bloo;

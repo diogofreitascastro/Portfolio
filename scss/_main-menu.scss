@@ -21,7 +21,7 @@ header {
 		.main-menu-left {
 			display: flex;
 			align-items: center;
-			height: 60px;
+			height: 90px;
 
 			@include mediumScreen {
 				height: 100px;
@@ -30,7 +30,7 @@ header {
 			* {
 				display: flex;
 				align-items: center;
-				height: 100px;
+				height: 100%;
 			}
 
 			.main-menu-left-1 {
