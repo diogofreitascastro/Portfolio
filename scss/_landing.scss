@@ -40,14 +40,14 @@ header {
 				display: inline-block;
 				padding: 20px;
 				border-radius: 100px;
-				background: $bloo;
+				background: $text-color;
 				color: $bg-color;
 				width: 150px;
 				text-align: center;
 				font-weight: 700;
 
 				&:hover {
-					background: $text-color;
+					background: $bloo;
 				}
 			}
 		}
