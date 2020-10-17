@@ -1,9 +1,7 @@
 header {
-	.section-wrapper#welcome {
-		background-image: linear-gradient(rgba($bg-color, 0), rgba($bg-color, 1)), url("../images/main-backgrouns-motifs.png");
-		background-size: cover;
-		background-position: center, top;
-	}
+	background-image: linear-gradient(rgba($bg-color, 0), rgba($bg-color, 1)), url("../images/main-backgrouns-motifs.png");
+	background-size: cover;
+	background-position: center, top;
 
 	.landing-wrapper {
 
@@ -26,8 +24,7 @@ header {
 		}
 
 		@include largeScreen {
-			height: 100vh;
-			margin-top: -100px
+			height: calc(100vh - 100px);
 		}
 
 		h1#name {
@@ -42,14 +39,15 @@ header {
 				display: inline-block;
 				padding: 20px;
 				border-radius: 100px;
-				background: $bloo;
-				color: $bg-color;
+				border: 3px solid $bloo;
+				color: $text-color;
 				width: 150px;
 				text-align: center;
 				font-weight: 700;
 
 				&:hover {
-					background: $text-color;
+					background: $bloo;
+					color: $bg-color;
 				}
 			}
 		}

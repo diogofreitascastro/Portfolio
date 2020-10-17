@@ -4,9 +4,15 @@ header {
 		align-items: center;
 		justify-content: space-between;
 		padding: 0 30px;
+		z-index: 1;
+		background: $bg-color;
 
 		@include mediumScreen {
 			padding: 0 80px;
+		}
+
+		@include largeScreen {
+			background: none;
 		}
 
 		* {
@@ -16,12 +22,16 @@ header {
 		.main-menu-left {
 			display: flex;
 			align-items: center;
-			height: $header-height;
+			height: 60px;
+
+			@include mediumScreen {
+				height: 100px;
+			}
 
 			* {
 				display: flex;
 				align-items: center;
-				height: $header-height;
+				height: 100px;
 			}
 
 			.main-menu-left-1 {
@@ -49,7 +59,7 @@ header {
 						margin-right: 30px;
 
 						&.active-page,
-						:hover {
+						&:hover {
 							border-top: 15px solid $bloo;
 							margin-top: -15px;
 						}
