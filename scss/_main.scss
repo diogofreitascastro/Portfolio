@@ -22,7 +22,7 @@ main {
 				display: grid;
 				grid-template-columns: repeat(1, 1fr);
 				grid-gap: 30px;
-				max-width: 900px;
+				max-width: 1000px;
 				margin: auto;
 
 				@include mediumScreen {
@@ -30,6 +30,7 @@ main {
 				}
 
 				@include largeScreen {
+					grid-gap: 60px;
 				}
 
 				.service-card {
