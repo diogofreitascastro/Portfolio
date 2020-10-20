@@ -9,17 +9,18 @@ header {
 			text-align: left;
 		}
 
-		min-height: 600px;
 		max-width: 500px;
 		margin: auto;
 		padding: 0 30px;
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		position: relative;
 
 		@include mediumScreen {
+			min-height: 600px;
 			padding: 0 100px;
 			max-width: 1500px;
+			align-items: center;
 		}
 
 		@include largeScreen {
@@ -68,10 +69,11 @@ header {
 
 		.img-holder {
 			text-align: center;
+			margin: 20px 0 40px;
 
 			@include mediumScreen {
 				padding-left: 40px;
-				margin-bottom: initial;
+				margin: initial;
 				text-align: initial;
 			}
 
