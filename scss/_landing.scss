@@ -9,18 +9,18 @@ header {
 			text-align: left;
 		}
 
-		max-width: 500px;
+		min-height: 50vh;
+		padding: 0 100px;
+		max-width: 1500px;
+		align-items: center;
 		margin: auto;
-		padding: 0 30px;
 		display: flex;
-		align-items: flex-start;
 		position: relative;
 
-		@include mediumScreen {
-			min-height: 600px;
-			padding: 0 100px;
-			max-width: 1500px;
-			align-items: center;
+		@include onlyMobile {
+			max-width: 500px;
+			padding: 0 30px;
+			align-items: flex-start;
 		}
 
 		@include largeScreen {
