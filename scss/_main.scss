@@ -22,13 +22,19 @@ main {
 			.service-cards-wrapper {
 				display: grid;
 				grid-template-columns: repeat(1, 1fr);
-				grid-gap: 60px;
+				grid-gap: 30px;
 
-				@include largeScreen {
+				@include mediumScreen {
 					grid-template-columns: repeat(3, 1fr);
 				}
 
+				@include largeScreen {
+					grid-gap: 60px;
+				}
+
 				.service-card {
+					text-align: center; /* for the image */
+
 					h1 {
 						font-size: 1rem;
 						margin-bottom: 10px;
@@ -42,6 +48,10 @@ main {
 							font-size: 1.5rem;
 							text-align: center;
 						}
+					}
+
+					img {
+						max-height: 100px;
 					}
 				}
 			}
