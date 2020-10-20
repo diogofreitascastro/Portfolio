@@ -1,3 +1,50 @@
 main {
-	height: 100vh;
+	section {
+		> h1 {
+			font-size: 1.5rem;
+			margin-bottom: 30px;
+
+			@include onlyMobile {
+				text-align: left;
+			}
+
+			@include mediumScreen {
+				font-size: 2rem;
+			}
+
+			@include largeScreen {
+				font-size: 2.5rem;
+			}
+		}
+
+		&.services-megawrapper {
+
+			.service-cards-wrapper {
+				display: grid;
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 60px;
+
+				@include largeScreen {
+					grid-template-columns: repeat(3, 1fr);
+				}
+
+				.service-card {
+					h1 {
+						font-size: 1rem;
+						margin-bottom: 10px;
+						text-align: left;
+
+						@include mediumScreen {
+							font-size: 1.25rem;
+						}
+
+						@include largeScreen {
+							font-size: 1.5rem;
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
 }
