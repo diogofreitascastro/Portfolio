@@ -1,5 +1,5 @@
 header {
-	background-image: linear-gradient(rgba($bg-color, 0), rgba($bg-color, 1)), url("../images/main-backgrouns-motifs.png");
+	/*background-image: linear-gradient(rgba($bg-color, 0), rgba($bg-color, 1)), url("../images/main-backgrouns-motifs.png");*/
 	background-size: cover;
 	background-position: center, top;
 
@@ -9,13 +9,11 @@ header {
 			text-align: left;
 		}
 
-		height: calc(100vh - 90px);
 		max-width: 500px;
 		margin: auto;
 		padding: 0 30px;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		align-items: center;
 		position: relative;
 
 		@include mediumScreen {
@@ -68,8 +66,12 @@ header {
 		}
 
 		.img-holder {
-			width: 100%;
-			height: 100%;
+			margin: 40px 0;
+
+			@include mediumScreen {
+				padding-left: 40px;
+				margin-bottom: initial;
+			}
 		}
 	}
 }
