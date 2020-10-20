@@ -102,12 +102,12 @@ a, a:link, a:visited {
 /* MY CSS */
 
 .section-wrapper {
-	padding: 50px 100px;
+	padding: 50px 80px;
 	max-width: 1500px;
 	margin: auto;
 
 	@include onlyMobile {
 		max-width: 500px;
-		padding: 30px;
+		padding: 50px 30px;
 	}
 }

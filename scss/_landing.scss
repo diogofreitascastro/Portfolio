@@ -3,8 +3,15 @@ header {
 	background-size: cover;
 	background-position: center, top;
 
-	.section-wrapper {
-		padding-top: 0;
+	.section-wrapper#welcome {
+
+		@include onlyMobile {
+			padding-top: 0;
+		}
+		
+		@include largeScreen {
+			padding-top: 0;
+		}
 
 		.landing-wrapper {
 
@@ -12,7 +19,7 @@ header {
 				text-align: left;
 			}
 
-			min-height: 50vh;
+			min-height: 40vh;
 			align-items: center;
 			display: flex;
 			position: relative;
