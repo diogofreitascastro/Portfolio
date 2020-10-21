@@ -18,7 +18,7 @@ main {
 
 		&.services-megawrapper {
 			margin: auto;
-			max-width: 900px;
+			max-width: 1000px;
 
 			*:not(h1) {
 				text-align: left;
@@ -73,6 +73,19 @@ main {
 
 						@include largeScreen {
 							font-size: 1rem;
+						}
+					}
+
+					.more-work {
+						margin-top: 10px;
+						font-weight: 700;
+						color: $bloo !important;
+						font-size: .8rem;
+
+						i {
+							font-weight: 700;
+							color: $bloo !important;
+							font-size: .8rem;
 						}
 					}
 				}

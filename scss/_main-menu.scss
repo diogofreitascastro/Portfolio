@@ -6,12 +6,12 @@ header {
 		padding: 0 30px;
 		z-index: 1;
 
+		position: fixed;
+		background: $bg-color;
+		width: 100%;
+
 		@include mediumScreen {
 			padding: 0 80px;
-		}
-
-		@include largeScreen {
-			background: none;
 		}
 
 		* {
@@ -21,11 +21,7 @@ header {
 		.main-menu-left {
 			display: flex;
 			align-items: center;
-			height: 90px;
-
-			@include mediumScreen {
-				height: 100px;
-			}
+			height: $main-menu-height;
 
 			* {
 				display: flex;
