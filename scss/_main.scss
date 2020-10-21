@@ -3,27 +3,31 @@ main {
 		> h1 {
 			font-size: 1.5rem;
 			margin-bottom: 30px;
-
-			@include onlyMobile {
-				text-align: left;
-			}
+			text-align: left;
 
 			@include mediumScreen {
 				font-size: 2rem;
+				text-align: center;
 			}
 
 			@include largeScreen {
 				font-size: 2.5rem;
+				margin-bottom: 60px;
 			}
 		}
 
 		&.services-megawrapper {
+			margin: auto;
+			max-width: 900px;
+
+			*:not(h1) {
+				text-align: left;
+			}
+
 			.service-cards-wrapper {
 				display: grid;
 				grid-template-columns: repeat(1, 1fr);
 				grid-gap: 30px;
-				margin: auto;
-				max-width: 900px;
 
 				@include mediumScreen {
 					grid-template-columns: repeat(2, 1fr);
@@ -35,20 +39,28 @@ main {
 				}
 
 				.service-card {
-					text-align: center; /* for the image */
-
 					h2 {
 						font-size: 1rem;
 						text-align: left;
+						position: relative;
+						margin-bottom: 20px;
 
 						@include mediumScreen {
 							font-size: 1.25rem;
-							text-align: center;
 						}
 
 						@include largeScreen {
 							font-size: 1.5rem;
-							margin-bottom: 10px;
+						}
+
+						&:after {
+							content: "";
+							position: absolute;
+							left: 0;
+							bottom: -8px;
+							background: $bloo;
+							height: 5px;
+							width: 50px;
 						}
 					}
 
