@@ -5,10 +5,11 @@ header {
 		justify-content: space-between;
 		padding: 0 30px;
 		z-index: 2;
-
-		position: fixed;
 		background: $bg-color;
 		width: 100%;
+
+		position: sticky;
+		top: 0;
 
 		@include mediumScreen {
 			padding: 0 80px;
@@ -64,41 +65,35 @@ header {
 		}
 	}
 
-	.drop-down-menu-bg {
+	.drop-down-menu {
 		display: none;
-		height: 100%;
 		width: 100%;
-		background: rgba(0, 0, 0, 0.75);
+		height: 100vh;
+
 		position: fixed;
+		top: 90px;
+		right: 0;
 		z-index: 1;
+		background: rgba(0, 0, 0, 0.75);
 
-		.drop-down-menu {
-			width: 100%;
+		ul {
+			li {
+				font-weight: 700;
+				width: 100%;
+				display: flex;
+				align-items: center;
+				background: $bg-color;
 
-			position: fixed;
-			top: 90px;
-			right: 0;
-			z-index: 1;
-			background: $bg-color;
-
-			ul {
-				li {
-					font-weight: 700;
+				a {
+					padding: 13px 30px;
+					height: 50px;
 					width: 100%;
-					display: flex;
-					align-items: center;
-
-					a {
-						padding: 13px 30px;
-						height: 50px;
-						width: 100%;
-					}
-
-					&:hover {
-						background: lighten( $bg-color, 5%);
-					}
 				}
-			}
+
+				&:hover {
+					background: lighten( $bg-color, 2%);
+				}
+			}	
 		}
 
 		&.open {

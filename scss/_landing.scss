@@ -23,7 +23,6 @@ header {
 			align-items: center;
 			display: flex;
 			position: relative;
-			padding-top: $main-menu-height;
 
 			@include onlyMobile {
 				align-items: flex-start;
@@ -31,6 +30,7 @@ header {
 
 			@include largeScreen {
 				height: 100vh;
+				margin-top: -45px;
 			}
 
 			h1#name {
