@@ -1,61 +1,88 @@
 /* VARIABLES */
-$bg-color: #161616;
-$text-color: #f1f1f1;
 
-$cyan: #00aeef;
-$magenta: #ec008c;
-$yellow: #fff200;
-$bloo: #a1ccdd;
+ $bg-color: #161616;
+ $text-color: #f1f1f1;
 
-$main-menu-height: 90px;
+ $cyan: #00aeef;
+ $magenta: #ec008c;
+ $yellow: #fff200;
+
+ $bloo: #a1ccdd;
+
+ $main-menu-height: 90px;
 
 /* MIXINS */
 
-@mixin random-cmyk {
-.random-cmyk {
-				transition: color .25s ease !important;
-			}
+ @mixin paragraph {
+     font-size: .8rem;
+     @include mediumScreen {
+         font-size: .9rem;
+    }
+     @include largeScreen {
+         font-size: 1rem;
+    }
+}
 
-			.cyan {
-				color: $cyan;
-			}
 
-			.magenta {
-				color: $magenta;
-			}
+ @mixin title-with-bar {
+     font-size: 1rem;
+     text-align: left;
+     margin-bottom: 20px;
+     position: relative;
+     @include mediumScreen {
+         font-size: 1.25rem;
+    }
+     @include largeScreen {
+         font-size: 1.5rem;
+    }
 
-			.yellow {
-				color: $yellow;
-			}
+    &:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -8px;
+		background: $bloo;
+		height: 5px;
+		width: 50px;
 	}
+}
 
-	@mixin cmyk-ul-li-a-hovers {
-		ul {
-					display: flex;
-					align-items: center;
 
-					li {
-						margin-right: 20px;
-
-						a, a:link, a:visited {
-							color: $bg-color;
-						}
-
-						a.hover-cyan:hover {
-							color: $cyan;
-						}
-
-						a.hover-magenta:hover {
-							color: $magenta;
-						}
-
-						a.hover-yellow:hover {
-							color: $yellow;
-						}
-
-						&:last-child {
-							margin: 0;
-						}
-					}
-				}
-	}
+ @mixin random-cmyk {
+     .random-cmyk {
+         transition: color .25s ease !important;
+    }
+     .cyan {
+         color: $cyan;
+    }
+     .magenta {
+         color: $magenta;
+    }
+     .yellow {
+         color: $yellow;
+    }
+}
+ @mixin cmyk-ul-li-a-hovers {
+     ul {
+         display: flex;
+         align-items: center;
+         li {
+             margin-right: 20px;
+             a, a:link, a:visited {
+                 color: $bg-color;
+            }
+             a.hover-cyan:hover {
+                 color: $cyan;
+            }
+             a.hover-magenta:hover {
+                 color: $magenta;
+            }
+             a.hover-yellow:hover {
+                 color: $yellow;
+            }
+             &:last-child {
+                 margin: 0;
+            }
+        }
+    }
+}

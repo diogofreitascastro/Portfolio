@@ -1,0 +1,60 @@
+.work-wrapper {
+	.projects-grid {
+		.project-category-wrapper {
+			margin-bottom: 50px;
+
+			@include onlyMobile {
+				margin-bottom: 30px;
+			}
+
+			> h1 {
+				@include title-with-bar;
+			}
+		}
+		.single-project-wrapper {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			grid-gap: 30px;
+
+			@include mediumScreen {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			@include largeScreen {
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: 60px
+			}
+
+			.project-image-holder {
+				overflow: hidden;
+				border-radius: 2px;
+
+				img {
+					object-fit: cover;
+					height: 100%;
+					width: 100%;
+					transition: transform ease 0.2s;
+
+					@include mediumScreen {
+						height: 18vw
+					}
+
+					@include largeScreen {
+						height: 12vw;
+					}
+
+					&:hover {
+						transform: scale(1.05);
+					}
+				}
+			}
+
+			h1 {
+				text-align: left;
+				margin-bottom: 10px;
+
+				@include paragraph;
+			}
+		}
+	}
+}

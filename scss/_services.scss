@@ -40,40 +40,11 @@ main {
 
 				.service-card {
 					h2 {
-						font-size: 1rem;
-						text-align: left;
-						position: relative;
-						margin-bottom: 20px;
-
-						@include mediumScreen {
-							font-size: 1.25rem;
-						}
-
-						@include largeScreen {
-							font-size: 1.5rem;
-						}
-
-						&:after {
-							content: "";
-							position: absolute;
-							left: 0;
-							bottom: -8px;
-							background: $bloo;
-							height: 5px;
-							width: 50px;
-						}
+						@include title-with-bar;
 					}
 
 					p {
-						font-size: .8rem;
-
-						@include mediumScreen {
-							font-size: .9rem;
-						}
-
-						@include largeScreen {
-							font-size: 1rem;
-						}
+						@include paragraph;
 					}
 
 					.more-work {

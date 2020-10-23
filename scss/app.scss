@@ -8,7 +8,7 @@
 @import "mouse-scroll";
 @import "services";
 
-@import "work";
+@import "single-work";
 
 /* RESETS */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -110,5 +110,13 @@ a, a:link, a:visited {
 	@include onlyMobile {
 		max-width: 500px;
 		padding: 50px 30px;
+	}
+
+	&:first-child {
+		padding-top: calc( 30px + 90px );
+
+		@include largeScreen {
+			padding-top: calc( 50px + 90px); 
+		}
 	}
 }
