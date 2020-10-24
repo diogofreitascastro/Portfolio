@@ -112,11 +112,11 @@ a, a:link, a:visited {
 		padding: 50px 30px;
 	}
 
-	&:first-child {
-		padding-top: 30px;
+	&.first-section {
+		padding-top: calc( 90px + 30px);
 
 		@include largeScreen {
-			padding-top: 50px; 
+			padding-top: calc( 90px + 50px); 
 		}
 	}
 }

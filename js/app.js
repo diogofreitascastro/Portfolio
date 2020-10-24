@@ -3,4 +3,8 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
 		$('.drop-down-menu').toggleClass('open');
 	});
+	$('.drop-down-menu').click(function(){
+		$(this).removeClass('open');
+		$('.hamburger').removeClass('open');
+	});
 });
