@@ -56,8 +56,8 @@ header {
 
 						&.active-page,
 						&:hover {
-							border-top: 15px solid $bloo;
-							margin-top: -15px;
+							border-top: 10px solid $bloo;
+							margin-top: -10px;
 						}
 					}
 				}
@@ -74,7 +74,6 @@ header {
 		top: 90px;
 		right: 0;
 		z-index: 1;
-		background: rgba(0, 0, 0, 0.75);
 
 		ul {
 			li {
@@ -82,7 +81,8 @@ header {
 				width: 100%;
 				display: flex;
 				align-items: center;
-				background: $bg-color;
+				background: black;
+				border-bottom: 1px solid $bg-color;
 
 				a {
 					padding: 13px 30px;
@@ -91,7 +91,7 @@ header {
 				}
 
 				&:hover {
-					background: lighten( $bg-color, 2%);
+					background: $bg-color;
 				}
 			}	
 		}

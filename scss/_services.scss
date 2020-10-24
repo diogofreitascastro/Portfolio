@@ -18,9 +18,9 @@ main {
 
 		&.services-megawrapper {
 			margin: auto;
-			max-width: 1000px;
+			/*max-width: 1000px;*/
 
-			*:not(h1) {
+			*/*:not(h1)*/ {
 				text-align: left;
 			}
 
