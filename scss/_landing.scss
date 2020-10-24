@@ -4,7 +4,7 @@ header {
 	background-position: center, top;
 
 	.section-wrapper#welcome {
-		padding-top: 90px;
+		padding-top: $main-menu-height;
 
 		@include largeScreen {
 			padding-top: 45px;

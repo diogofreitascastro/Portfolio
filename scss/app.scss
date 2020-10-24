@@ -113,7 +113,11 @@ a, a:link, a:visited {
 	}
 
 	&.first-section {
-		padding-top: calc( 90px + 30px);
+		padding-top: $main-menu-height;
+
+		@include mediumScreen {
+			padding-top: calc( 90px + 30px);
+		}
 
 		@include largeScreen {
 			padding-top: calc( 90px + 50px); 
