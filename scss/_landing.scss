@@ -4,10 +4,13 @@ header {
 	background-position: center, top;
 
 	.section-wrapper#welcome {
-		padding-top: $main-menu-height;
+		@include onlyMobile {
+			padding-top: 0;
+		}
 
 		@include largeScreen {
-			padding-top: 45px;
+			margin-top: -45px;
+			padding-top: 0;
 		}
 
 		.landing-wrapper {

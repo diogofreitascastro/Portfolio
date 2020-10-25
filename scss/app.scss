@@ -102,6 +102,10 @@ a, a:link, a:visited {
 
 /* MY CSS */
 
+body {
+	padding-top: $main-menu-height;
+}
+
 .section-wrapper {
 	padding: 50px 80px;
 	max-width: 1500px;
@@ -113,14 +117,14 @@ a, a:link, a:visited {
 	}
 
 	&.first-section {
-		padding-top: $main-menu-height;
+		padding-top: 10px; /* mobile */
 
 		@include mediumScreen {
-			padding-top: calc( 90px + 30px);
+			padding-top: 30px;
 		}
 
 		@include largeScreen {
-			padding-top: calc( 90px + 50px); 
+			padding-top: 50px; 
 		}
 	}
 }
