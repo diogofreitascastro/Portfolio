@@ -9,7 +9,6 @@ header {
 		}
 
 		@include largeScreen {
-			margin-top: -45px;
 			padding-top: 0;
 			padding-bottom: 0;
 		}
@@ -30,7 +29,7 @@ header {
 			}
 
 			@include largeScreen {
-				height: 100vh;
+				height: calc(100vh - $main-menu-height);
 			}
 
 			h1#name {
