@@ -1,8 +1,4 @@
-header {
-	/*background-image: linear-gradient(rgba($bg-color, 0), rgba($bg-color, 1)), url("../images/main-backgrouns-motifs.png");*/
-	background-size: cover;
-	background-position: center, top;
-
+main {
 	.section-wrapper#welcome {
 		@include onlyMobile {
 			padding-top: 0;
