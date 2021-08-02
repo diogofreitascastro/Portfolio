@@ -26,10 +26,10 @@ header {
 			width: 100%;
 			justify-content: space-between;
 
-			@include largeScreen {
+			/*@include largeScreen {
 				width: initial;
 				justify-content: initial;
-			}
+			}*/
 
 			* {
 				display: flex;
@@ -86,15 +86,16 @@ header {
 		right: 0;
 		z-index: 1;
 
-		background-color: rgba( $bg-color, .5 );
+		background-color: rgba( $bg-color, .70 );
 
 		ul {
+			background-color: darken( $bg-color, 5%);
+
 			li {
 				font-weight: 700;
 				width: 100%;
 				display: flex;
 				align-items: center;
-				background: black;
 				border-bottom: 1px solid $bg-color;
 
 				a {
