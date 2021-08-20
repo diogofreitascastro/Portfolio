@@ -10,11 +10,39 @@
 			@include largeScreen {
 				margin-bottom: 40px;
 			}
+		}
+
+		.projects-title {
+			width: 100%;
 
 			> h1 {
 				@include title-with-bar;
 			}
+
+			.filters {
+				display: flex;
+				font-weight: bold;
+				margin-bottom: 20px;
+
+				ul {
+					display: flex;
+					font-size: .9rem;
+
+					li {
+						margin-right: 10px;
+						padding: 3px 10px;
+						border: 2px solid $bloo;
+						border-radius: 100px;
+						cursor: pointer;
+
+						&:hover {
+							background-color: $bloo;
+						}
+					}
+				}
+			}
 		}
+
 		.single-project-wrapper {
 			display: grid;
 			grid-template-columns: repeat(1, 1fr);
@@ -48,9 +76,9 @@
 						height: 250px;
 					}
 
-					&:hover {
+					/*&:hover {
 						transform: scale(1.05);
-					}
+					}*/
 				}
 			}
 
