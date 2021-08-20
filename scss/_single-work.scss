@@ -27,7 +27,7 @@
 				ul {
 					display: flex;
 					flex-flow: wrap;
-					font-size: .9rem;
+					@include paragraph;
 
 					li {
 						margin-right: 10px;
