@@ -22,14 +22,16 @@
 			.filters {
 				display: flex;
 				font-weight: bold;
-				margin-bottom: 20px;
+				margin-bottom: 10px;
 
 				ul {
 					display: flex;
+					flex-flow: wrap;
 					font-size: .9rem;
 
 					li {
 						margin-right: 10px;
+						margin-bottom: 10px;
 						padding: 3px 10px;
 						border: 2px solid $bloo;
 						border-radius: 100px;
