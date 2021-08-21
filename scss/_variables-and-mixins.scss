@@ -1,39 +1,49 @@
 /* VARIABLES */
 
- $bg-color: #232637;
- $text-color: #f1f1f1;
+$bg-color: #232637;
+$text-color: #f1f1f1;
 
- $cyan: #00aeef;
- $magenta: #ec008c;
- $yellow: #fff200;
+$cyan: #00aeef;
+$magenta: #ec008c;
+$yellow: #fff200;
 
- $bloo: #e8a952;
+$bloo: #e8a952;
 
- $main-menu-height: 90px;
+$main-menu-height: 90px;
 
 /* MIXINS */
 
- @mixin paragraph {
-     font-size: .8rem;
-     @include mediumScreen {
-         font-size: .9rem;
+@mixin paragraph {
+    font-size: .8rem;
+    @include mediumScreen {
+        font-size: .9rem;
     }
-     @include largeScreen {
-         font-size: 1rem;
+    @include largeScreen {
+        font-size: 1rem;
+    }
+}
+
+@mixin filters {
+    font-size: .7rem;
+    @include mediumScreen {
+        font-size: .8rem;
+    }
+    @include largeScreen {
+        font-size: .9rem;
     }
 }
 
 
- @mixin title-with-bar {
-     font-size: 1rem;
-     text-align: left;
-     margin-bottom: 20px;
-     position: relative;
-     @include mediumScreen {
-         font-size: 1.25rem;
+@mixin title-with-bar {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+    @include mediumScreen {
+        font-size: 1.25rem;
     }
-     @include largeScreen {
-         font-size: 1.5rem;
+    @include largeScreen {
+        font-size: 1.5rem;
     }
 
     &::after {
@@ -48,40 +58,40 @@
 }
 
 
- @mixin random-cmyk {
-     .random-cmyk {
-         transition: color .25s ease !important;
+@mixin random-cmyk {
+    .random-cmyk {
+        transition: color .25s ease !important;
     }
-     .cyan {
-         color: $cyan;
+    .cyan {
+        color: $cyan;
     }
-     .magenta {
-         color: $magenta;
+    .magenta {
+        color: $magenta;
     }
-     .yellow {
-         color: $yellow;
+    .yellow {
+        color: $yellow;
     }
 }
- @mixin cmyk-ul-li-a-hovers {
-     ul {
-         display: flex;
-         align-items: center;
-         li {
-             margin-right: 20px;
-             a, a:link, a:visited {
-                 color: $bg-color;
+@mixin cmyk-ul-li-a-hovers {
+    ul {
+        display: flex;
+        align-items: center;
+        li {
+            margin-right: 20px;
+            a, a:link, a:visited {
+                color: $bg-color;
             }
-             a.hover-cyan:hover {
-                 color: $cyan;
+            a.hover-cyan:hover {
+                color: $cyan;
             }
-             a.hover-magenta:hover {
-                 color: $magenta;
+            a.hover-magenta:hover {
+                color: $magenta;
             }
-             a.hover-yellow:hover {
-                 color: $yellow;
+            a.hover-yellow:hover {
+                color: $yellow;
             }
-             &:last-child {
-                 margin: 0;
+            &:last-child {
+                margin: 0;
             }
         }
     }
