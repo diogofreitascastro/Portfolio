@@ -74,27 +74,29 @@
 				grid-gap: 40px
 			}
 
-			.project-image-holder {
-				overflow: hidden;
-				border-radius: 2px;
+			.single-project {
+				.project-image-holder {
+					overflow: hidden;
+					border-radius: 2px;
 
-				img {
-					object-fit: cover;
-					height: 100%;
-					width: 100%;
-					transition: transform ease 0.2s;
+					img {
+						object-fit: cover;
+						height: 100%;
+						width: 100%;
+						transition: transform ease 0.2s;
 
-					@include mediumScreen {
-						height: 200px;
+						@include mediumScreen {
+							height: 200px;
+						}
+
+						@include largeScreen {
+							height: 250px;
+						}
+
+						/*&:hover {
+							transform: scale(1.05);
+						}*/
 					}
-
-					@include largeScreen {
-						height: 250px;
-					}
-
-					/*&:hover {
-						transform: scale(1.05);
-					}*/
 				}
 			}
 
