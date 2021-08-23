@@ -26,9 +26,14 @@
 				margin-top: 10px;
 
 				ul {
-					display: flex;
-					flex-flow: wrap;
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					width: 100%;
 					@include filters;
+
+					@include mediumScreen {
+						grid-template-columns: repeat(4, 1fr);
+					}
 
 					li {
 						margin-right: 10px;
