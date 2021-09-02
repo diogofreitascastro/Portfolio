@@ -1,7 +1,5 @@
 .work-wrapper {
 	.project-image-wrapper {
-		margin-bottom: 20px;
-
 		img {
 			height: 200px;
 			width: 100%;
@@ -17,13 +15,14 @@
 		}
 	}
 
-	.project-description {
-		margin-bottom: 20px;
+	.project-info {
+		margin: 30px 0 60px;
 
-		.project-info {
+		.project-info-list {
 			margin-bottom: 20px;
 
 			@include largeScreen {
+				padding-right: 30px;
 				margin: initial;
 			}
 
@@ -38,8 +37,18 @@
 					&:last-child {
 						margin-bottom: 0;
 					}
+
+					span.project-info-list-subtitle {
+						font-weight: bold;
+						letter-spacing: 3px;
+					}
 				}
 			}
+		}
+
+		.project-description {
+			/*column-count: 2;
+			grid-gap: 30px;*/
 		}
 	}
 
