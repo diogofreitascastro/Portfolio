@@ -3,7 +3,7 @@ header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0 30px;
+		padding: 0 50px;
 		z-index: 2;
 		background: $bg-color;
 		width: 100%;
@@ -11,7 +11,11 @@ header {
 		position: fixed;
 		top: 0;
 
-		@include mediumScreen {
+		@include onlyMobile {
+			padding: 0 30px;
+		}
+
+		@include largeScreen {
 			padding: 0 80px;
 		}
 

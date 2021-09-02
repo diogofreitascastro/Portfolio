@@ -1,0 +1,84 @@
+.work-wrapper {
+	.project-image-wrapper {
+		margin-bottom: 20px;
+
+		img {
+			height: 200px;
+			width: 100%;
+			object-fit: cover;
+
+			@include mediumScreen {
+				height: 300px;
+			}
+
+			@include largeScreen {
+				height: 400px;
+			}
+		}
+	}
+
+	.project-description {
+		margin-bottom: 20px;
+
+		.project-info {
+			margin-bottom: 20px;
+
+			@include largeScreen {
+				margin: initial;
+			}
+
+			ul {
+				li {
+					opacity: 50%;
+
+					@include largeScreen {
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	/* MASONRY STUFF */
+
+	img {
+		max-width: 100%;
+		height: auto;
+		vertical-align: middle;
+		display: inline-block;
+	}
+
+	.masonry {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-auto-rows: 200px;
+		grid-auto-flow: dense;
+
+		> div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			> img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 5px;
+			}
+		}
+
+		.wide {
+			grid-column: span 2;
+		}
+
+		.tall {
+			grid-row: span 2;
+		}
+
+		.big {
+			grid-column: span 2;
+			grid-row: span 2;
+		}
+	}
+}

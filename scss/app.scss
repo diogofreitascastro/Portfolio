@@ -108,13 +108,17 @@ body {
 }
 
 .section-wrapper {
-	padding: 50px 80px;
+	padding: 50px 50px;
 	max-width: 1500px;
 	margin: auto;
 
 	@include onlyMobile {
 		max-width: 500px;
 		padding: 50px 30px;
+	}
+
+	@include largeScreen {
+		padding: 50px 80px;
 	}
 
 	&.first-section {
