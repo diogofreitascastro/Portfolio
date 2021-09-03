@@ -82,11 +82,15 @@ a, i, p {
 p {
 	text-align: justify;
   	text-justify: inter-word;
+
+  	@include paragraph;
 }
 
 ul {
 	list-style: none;
 	margin: 0;
+
+	@include paragraph;
 }
 
 ol {
