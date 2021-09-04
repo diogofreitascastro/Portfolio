@@ -21,48 +21,48 @@ $(document).ready(function(){
 	$('.filters li.web-design-filter').click(function(){
         if ( $(this).hasClass('active-filter') ) {
             $(this).removeClass('active-filter');
-            $('.single-project').removeClass('hide');
+            $('.project-grid-card').removeClass('hide');
         } else {
             $(this).addClass('active-filter');
             $('.graphic-design-filter, .illustration-filter, .photography-filter').removeClass('active-filter');
-            $('.single-project').addClass('hide');
-            $('.single-project.web-design').removeClass('hide');
+            $('.project-grid-card').addClass('hide');
+            $('.project-grid-card.web-design').removeClass('hide');
         } 
     });
 
     $('.filters li.graphic-design-filter').click(function(){
         if ( $(this).hasClass('active-filter') ) {
             $(this).removeClass('active-filter');
-            $('.single-project').removeClass('hide');
+            $('.project-grid-card').removeClass('hide');
         } else {
             $(this).addClass('active-filter');
             $('.web-design-filter, .illustration-filter, .photography-filter').removeClass('active-filter');
-            $('.single-project').addClass('hide');
-            $('.single-project.graphic-design').removeClass('hide');
+            $('.project-grid-card').addClass('hide');
+            $('.project-grid-card.graphic-design').removeClass('hide');
         } 
     });
 
     $('.filters li.illustration-filter').click(function(){
         if ( $(this).hasClass('active-filter') ) {
             $(this).removeClass('active-filter');
-            $('.single-project').removeClass('hide');
+            $('.project-grid-card').removeClass('hide');
         } else {
             $(this).addClass('active-filter');
             $('.web-design-filter, .graphic-design-filter, .photography-filter').removeClass('active-filter');
-            $('.single-project').addClass('hide');
-            $('.single-project.illustration').removeClass('hide');
+            $('.project-grid-card').addClass('hide');
+            $('.project-grid-card.illustration').removeClass('hide');
         } 
     });
 
     $('.filters li.photography-filter').click(function(){
         if ( $(this).hasClass('active-filter') ) {
             $(this).removeClass('active-filter');
-            $('.single-project').removeClass('hide');
+            $('.project-grid-card').removeClass('hide');
         } else {
             $(this).addClass('active-filter');
             $('.web-design-filter, .illustration-filter, .graphic-design-filter').removeClass('active-filter');
-            $('.single-project').addClass('hide');
-            $('.single-project.photography').removeClass('hide');
+            $('.project-grid-card').addClass('hide');
+            $('.project-grid-card.photography').removeClass('hide');
         } 
     });
 
@@ -77,10 +77,10 @@ $(".filters li").on('click', function(event){
     }
     
     if (filters.length > 0) {
-        $(".single-project").hide();
+        $(".project-grid-card").hide();
         filters.forEach((element) => {$("." + element).show() })
     } else {
-        $(".single-project").show();
+        $(".project-grid-card").show();
     }
 });*/
 
