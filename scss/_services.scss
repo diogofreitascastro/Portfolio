@@ -1,17 +1,15 @@
 main {
 	section {
 		> h1 {
-			font-size: 1.5rem;
-			margin-bottom: 30px;
-			text-align: left;
+			@include first-title;
 
+			margin-bottom: 30px;
+			
 			@include mediumScreen {
-				font-size: 2rem;
-				text-align: center;
+				margin-bottom: 30px;
 			}
 
 			@include largeScreen {
-				font-size: 2.5rem;
 				margin-bottom: 60px;
 			}
 		}

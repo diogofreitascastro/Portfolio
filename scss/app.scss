@@ -10,6 +10,7 @@
 
 @import "project-grid";
 @import "single-project";
+@import "about-me";
 
 /* RESETS */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -110,7 +111,7 @@ body {
 }
 
 .section-wrapper {
-	padding: 20px 30px;
+	padding: 30px 30px;
 	max-width: 500px;
 	margin: auto;
 
@@ -123,6 +124,10 @@ body {
 		padding: 50px 80px;
 	}
 
+	&:not(.first-section) > h1 {
+		@include title-with-bar;
+	}
+
 	&.first-section {
 		padding-top: 10px; /* mobile */
 
@@ -132,6 +137,10 @@ body {
 
 		@include largeScreen {
 			padding-top: 50px; 
+		}
+
+		> h1 {
+			@include first-title;
 		}
 	}
 }

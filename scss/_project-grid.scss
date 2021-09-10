@@ -1,11 +1,3 @@
-.project-title {
-		width: 100%;
-
-		> h1 {
-			@include title-with-bar;
-		}
-	}
-
 .projects-grid {
 	.project-category-wrapper {
 		margin-bottom: 20px;

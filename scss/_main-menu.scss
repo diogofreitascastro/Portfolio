@@ -20,16 +20,12 @@ header {
 			padding: 0 80px;
 		}
 
-		* {
-			font-weight: 700;
-			height: 100%;
-		}
-
 		.main-menu-left {
 			display: flex;
 			align-items: center;
 			width: 100%;
 			justify-content: space-between;
+			height: 100%;
 
 			/*@include largeScreen {
 				width: initial;
@@ -37,6 +33,8 @@ header {
 			}*/
 
 			* {
+				font-weight: 700;
+				height: 100%;
 				display: flex;
 				align-items: center;
 			}

@@ -6,11 +6,11 @@
 			object-fit: cover;
 
 			@include mediumScreen {
-				height: 300px;
+				height: 200px;
 			}
 
 			@include largeScreen {
-				height: 400px;
+				height: 300px;
 			}
 		}
 	}
