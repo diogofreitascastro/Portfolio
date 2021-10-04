@@ -41,14 +41,10 @@
 
 					@include mediumScreen {
 						width: fit-content;
-						grid-gap: 20px;
 					}
 
 					img {
-						max-height: 50px;
-						width: auto;
-
-						@include largeScreen {
+						@include mediumScreen {
 							max-height: 60px;
 						}
 					}
