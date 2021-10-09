@@ -145,11 +145,7 @@ body {
 	}
 
 	&:last-child {
-		padding-bottom: 10px;
-
-		@include mediumScreen {
-			padding-bottom: 30px;
-		}
+		padding-bottom: 30px;
 
 		@include largeScreen {
 			padding-bottom: 50px;
