@@ -1,17 +1,12 @@
 .work-wrapper {
+	p {
+		margin-bottom: 20px;
+	}
+
 	.project-image-wrapper {
 		img {
-			height: 200px;
 			width: 100%;
 			object-fit: cover;
-
-			@include mediumScreen {
-				height: 200px;
-			}
-
-			@include largeScreen {
-				height: 300px;
-			}
 		}
 	}
 
@@ -30,14 +25,6 @@
 				li {
 					opacity: 50%;
 
-					@include largeScreen {
-						margin-bottom: 20px;
-					}
-
-					&:last-child {
-						margin-bottom: 0;
-					}
-
 					span.project-info-list-subtitle {
 						font-weight: bold;
 						letter-spacing: 1px;
@@ -49,60 +36,15 @@
 		.project-description {
 			/*column-count: 2;
 			grid-gap: 30px;*/
+			p {
+				margin-bottom: 0;
+			}
 		}
 	}
 
 	/* MASONRY STUFF */
 
-	img {
-		max-width: 100%;
-		height: auto;
-		vertical-align: middle;
-		display: inline-block;
-	}
 }
-
-/*.masonry {
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-	grid-auto-rows: 200px;
-	grid-auto-flow: dense;
-
-	@include mediumScreen {
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	}
-
-	@include largeScreen {
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	}
-
-	> div {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		> img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			border-radius: 2px;
-		}
-	}
-
-	.wide {
-		grid-column: span 2;
-	}
-
-	.tall {
-		grid-row: span 2;
-	}
-
-	.big {
-		grid-column: span 2;
-		grid-row: span 2;
-	}
-}*/
 
 .masonry {
 	display: flex;
