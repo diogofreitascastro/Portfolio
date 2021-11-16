@@ -25,7 +25,7 @@ $main-menu-height-scrolled: 70px;
 }
 
 @mixin filters {
-    font-size: .8rem;
+    font-size: .75rem;
     @include mediumScreen {
         font-size: .8rem;
     }
