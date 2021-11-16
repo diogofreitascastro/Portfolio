@@ -62,7 +62,7 @@
 	}
 }
 
-.masonry {
+/*.masonry {
 	display: grid;
 	grid-gap: 10px;
 	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -101,5 +101,25 @@
 	.big {
 		grid-column: span 2;
 		grid-row: span 2;
+	}
+}*/
+
+.masonry {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 20px;
+
+	.single-image-wrapper {
+		@include mediumScreen {
+			flex: 1 0 auto;
+		}
+
+		img {
+			@include mediumScreen {
+				object-fit: cover;
+				width: 100%;
+				height: 300px;
+			}
+		}
 	}
 }
