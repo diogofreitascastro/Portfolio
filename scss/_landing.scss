@@ -1,11 +1,18 @@
 main {
 	.section-wrapper#welcome {
 		@include onlyMobile {
+			padding-top: 0;
 			padding-bottom: 30px;
 		}
 
 		@include largeScreen {
+			padding-top: 0;
 			padding-bottom: 0;
+		}
+
+		@include xxl {
+			padding-top: 80px;
+			padding-bottom: 80px
 		}
 
 		.landing-wrapper {
@@ -25,6 +32,10 @@ main {
 
 			@include largeScreen {
 				height: calc(100vh - #{$main-menu-height});
+			}
+
+			@include xxl {
+				height: initial;
 			}
 
 			h1#name {
