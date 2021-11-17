@@ -11,6 +11,7 @@ header {
 
 		position: fixed;
 		top: 0;
+		transition: .2s ease;
 
 		@include onlyMobile {
 			padding: 0 30px;
@@ -18,6 +19,11 @@ header {
 
 		@include largeScreen {
 			padding: 0 80px;
+		}
+
+		&.scrolled {
+			filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+			height: 60px;
 		}
 
 		.main-menu-left {
@@ -89,6 +95,11 @@ header {
 		z-index: 1;
 
 		background-color: rgba( $bg-color, .70 );
+		transition: .2s ease;
+
+		&.scrolled {
+			top: 60px;
+		}
 
 		ul {
 			background-color: darken( $bg-color, 5%);

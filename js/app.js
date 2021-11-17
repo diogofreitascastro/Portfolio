@@ -12,6 +12,19 @@ $(document).ready(function(){
 	});
 
 
+    /* make header smaller on scroll */
+
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 30) {
+            $(".main-menu, .drop-down-menu").addClass("scrolled");
+        } else {
+            $(".main-menu, .drop-down-menu").removeClass("scrolled");
+        }
+    });
+
+
 	/* toggle filters */
 
 	/*$('.filters li').click(function(){
