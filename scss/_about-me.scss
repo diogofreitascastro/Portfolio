@@ -1,4 +1,8 @@
 .about-wrapper {
+	p {
+		margin-bottom: 20px;
+	}
+
 	.intro-wrapper {
 		width: 100%;
 
@@ -21,7 +25,6 @@
 			}
 
 			.software-icons {
-				margin-top: 30px;
 				display: flex;
 				flex-flow: column;
 				grid-gap: 10px;
@@ -53,7 +56,7 @@
 		}
 
 		.img-holder {
-			margin-top: -20px;
+			margin-top: -30px;
 		}
 	}
 }
