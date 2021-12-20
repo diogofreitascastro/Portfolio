@@ -51,17 +51,17 @@ $main-menu-height-scrolled: 70px;
 
 
 @mixin title-with-bar {
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-align: left;
     margin-bottom: 20px;
     position: relative;
 
     @include mediumScreen {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
     
     @include largeScreen {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 
     &::after {
@@ -73,6 +73,20 @@ $main-menu-height-scrolled: 70px;
 		height: 5px;
 		width: 50px;
 	}
+}
+
+@mixin h2 {
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 10px;
+
+    @include mediumScreen {
+        font-size: 1.1rem;
+    }
+
+    @include largeScreen {
+        font-size: 1.3rem;
+    }
 }
 
 

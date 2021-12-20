@@ -128,6 +128,10 @@ body {
 		@include title-with-bar;
 	}
 
+	h2 {
+		@include h2;
+	}
+
 	&.first-section {
 		padding-top: 10px; /* mobile */
 
