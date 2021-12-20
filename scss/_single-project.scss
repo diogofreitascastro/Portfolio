@@ -58,20 +58,29 @@
 		}
 	} 
 
-	.image-grid {
-		display: flex;
+	.image-and-caption {
+		display: grid;
 		justify-content: center;
 
-		img {
-			max-height: 300px;
+		.image-grid {
+			display: flex;
+			justify-content: center;
 
-			@include largeScreen {
-				max-height: 500px;
+			img {
+				max-height: 300px;
+
+				@include largeScreen {
+					max-height: 500px;
+				}
 			}
 		}
 
 		.caption {
-			clear: all;
+			margin-top: 10px;
+			p {
+				font-style: italic;
+				opacity: .5;
+			}
 		}
 	}
 }
