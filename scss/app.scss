@@ -152,3 +152,8 @@ body {
 		}
 	}
 }
+
+.grid {
+	display: grid;
+	@include grid-gap;
+}

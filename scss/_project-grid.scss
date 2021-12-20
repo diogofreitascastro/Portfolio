@@ -58,16 +58,13 @@
 	.project-grid-wrapper {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-		grid-gap: 20px;
 
 		@include mediumScreen {
 			grid-template-columns: repeat(2, 1fr);
-			grid-gap: 30px;
 		}
 
 		@include largeScreen {
 			grid-template-columns: repeat(3, 1fr);
-			grid-gap: 40px
 		}
 
 		.project-grid-card {

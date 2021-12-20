@@ -114,3 +114,15 @@ $main-menu-height-scrolled: 70px;
         }
     }
 }
+
+@mixin grid-gap {
+    grid-gap: 20px;
+
+    @include mediumScreen {
+        grid-gap: 30px;
+    }
+
+    @include largeScreen {
+        grid-gap: 40px;
+    }
+}

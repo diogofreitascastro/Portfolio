@@ -7,6 +7,10 @@
 		img {
 			width: 100%;
 			object-fit: cover;
+
+			@include mediumScreen {
+				height: 300px;
+			}
 		}
 	}
 
@@ -45,6 +49,29 @@
 			p {
 				margin-bottom: 0;
 			}
+		}
+	}
+
+	.text-wrapper {
+		p:last-child {
+			margin-bottom: 0;
+		}
+	} 
+
+	.image-grid {
+		display: flex;
+		justify-content: center;
+
+		img {
+			max-height: 300px;
+
+			@include largeScreen {
+				max-height: 500px;
+			}
+		}
+
+		.caption {
+			clear: all;
 		}
 	}
 
