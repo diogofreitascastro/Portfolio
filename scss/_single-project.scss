@@ -70,14 +70,29 @@
 				max-height: 300px;
 
 				@include largeScreen {
-					max-height: 500px;
+					max-height: 300px;
 				}
 			}
 		}
 
+		/* EXCEPTIONS */
+
+		&.geometric-swirls {
+			.image-grid {
+				img {
+					max-height: 300px;
+				}
+			}
+		}
+
+		/* END OF EXCEPTIONS */
+
 		.caption {
 			margin-top: 10px;
+			/*max-width: fit-content;*/
+
 			p {
+				text-align: center;
 				font-style: italic;
 				opacity: .5;
 				margin: 0;
