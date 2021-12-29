@@ -65,27 +65,18 @@
 		.image-grid {
 			display: flex;
 			justify-content: center;
+			align-items: center;
 
 			img {
 				max-height: 300px;
+			}
 
-				@include largeScreen {
-					max-height: 300px;
+			&.mobile-column {
+				@include onlyMobile {
+					flex-flow: column;
 				}
 			}
 		}
-
-		/* EXCEPTIONS */
-
-		&.geometric-swirls {
-			.image-grid {
-				img {
-					max-height: 300px;
-				}
-			}
-		}
-
-		/* END OF EXCEPTIONS */
 
 		.caption {
 			margin-top: 10px;
