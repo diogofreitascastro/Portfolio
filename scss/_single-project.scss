@@ -71,6 +71,8 @@
 				max-height: 300px;
 			}
 
+			/* WIDER IMAGES */
+			
 			&.mobile-column {
 				@include onlyMobile {
 					flex-flow: column;
