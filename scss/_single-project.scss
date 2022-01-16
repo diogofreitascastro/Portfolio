@@ -46,8 +46,8 @@
 		.project-description {
 			/*column-count: 2;
 			grid-gap: 30px;*/
-			p {
-				margin-bottom: 0;
+			p:not(:last-child) {
+				margin-bottom: 10px;
 			}
 		}
 	}
