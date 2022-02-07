@@ -27,23 +27,17 @@
 			.software-icons {
 				display: flex;
 				flex-flow: column;
-				grid-gap: 10px;
-				align-items: center;
-
-				@include mediumScreen {
-					grid-gap: 20px;
-					align-items: initial;
-				}
+				grid-gap: 20px;
 
 				.adobes,
 				.code {
-					width: 100%;
 					display: grid;
 					grid-template-columns: repeat(6, 1fr);
 					grid-gap: 10px;
 
 					@include mediumScreen {
 						width: fit-content;
+						grid-gap: 20px;
 					}
 
 					img {
