@@ -139,10 +139,6 @@ body {
 			padding-top: 30px;
 		}
 
-		@include largeScreen {
-			padding-top: 50px; 
-		}
-
 		> h1 {
 			@include first-title;
 		}
