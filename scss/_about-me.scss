@@ -53,4 +53,45 @@
 			margin-top: -30px;
 		}
 	}
+
+	#about-academic-history, #about-work-experience {
+		.table-item {
+			margin-bottom: 20px;
+
+			> div:not(:last-child) {
+				margin-bottom: 20px;
+			}
+
+			h2 {
+				@include paragraph;
+			}
+
+			h2.org-title {
+				text-align: left;
+				@include paragraph;
+
+				margin-bottom: 0;
+
+				@include largeScreen {
+					margin-bottom: 10px;
+				}
+			}
+
+			h3.org-dates {
+				text-align: left;
+				opacity: 50%;
+				font-weight: normal;
+
+				@include paragraph;
+			}
+
+			h2.course-title {
+				margin-bottom: 5px;
+
+				@include largeScreen {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
 }
