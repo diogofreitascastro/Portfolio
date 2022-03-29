@@ -69,6 +69,10 @@
 
 				&:not(:last-child) {
 					margin-bottom: 5px;
+
+					@include largeScreen {
+						margin-bottom: initial;
+					}
 				}
 			}
 
