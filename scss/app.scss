@@ -90,10 +90,14 @@ p {
 ul {
 	list-style: none;
 	margin: 0;
+
+	@include paragraph;
 }
 
 ol {
 	margin-bottom: 0;
+
+	@include paragraph;
 }
 
 body {
@@ -108,6 +112,10 @@ a, a:link, a:visited {
 
 body {
 	padding-top: $main-menu-height;
+}
+
+main {
+	min-height: calc(100vh-80px);
 }
 
 .section-wrapper {

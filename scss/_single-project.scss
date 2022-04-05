@@ -1,6 +1,10 @@
 .work-wrapper {
 	p {
-		margin-bottom: 20px;
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin: 0;
+		}
 	}
 
 	.project-image-wrapper {
@@ -88,6 +92,10 @@
 		.caption {
 			margin-top: 10px;
 			/*max-width: fit-content;*/
+
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
 
 			p {
 				text-align: center;
