@@ -12,9 +12,9 @@
 			width: 100%;
 			object-fit: cover;
 
-			/*@include mediumScreen {
-				height: 300px;
-			}*/
+			@include mediumScreen {
+				height: 200px;
+			}
 		}
 	}
 
