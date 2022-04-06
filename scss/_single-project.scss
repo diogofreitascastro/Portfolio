@@ -69,6 +69,12 @@
 		p:last-child {
 			margin-bottom: 0;
 		}
+
+		ul, ol {
+			margin: 0;
+
+			@include paragraph;
+		}
 	} 
 
 	.image-and-caption {

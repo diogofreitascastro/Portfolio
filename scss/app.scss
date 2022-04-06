@@ -90,14 +90,6 @@ p {
 ul {
 	list-style: none;
 	margin: 0;
-
-	@include paragraph;
-}
-
-ol {
-	margin-bottom: 0;
-
-	@include paragraph;
 }
 
 body {
