@@ -19,9 +19,13 @@
 	}
 
 	.project-info {
-		margin: 20px 0 0;
+		margin: 10px 0 0;
 
 		@include mediumScreen {
+			margin-top: 20px;
+		}
+
+		@include largeScreen {
 			margin-top: 30px;
 		}
 
