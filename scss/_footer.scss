@@ -1,0 +1,65 @@
+footer {
+	.inner-footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 50px;
+		z-index: 2;
+		background: darken( $bg-color, 2.5%);
+		min-height: 60px;
+
+
+		font-size: .8rem;
+
+		@include onlyMobile {
+			padding: 15px 30px;
+			flex-direction: column;
+		}
+
+		@include mediumScreen {
+			font-size: .9rem;
+		}
+
+		@include largeScreen {
+			padding: 0 80px;
+		}
+
+		.signature-wrap {
+			@include onlyMobile {
+				margin-bottom: 15px;
+			}
+
+			#signature {
+				opacity: .2;
+				text-align: center;
+
+				@include mediumScreen {
+					text-align: left;
+				}
+			}
+		}
+
+		.other-links {
+			display: flex;
+			flex-direction: row;
+			grid-gap: 20px;
+
+			@include mediumScreen {
+				grid-gap: 30px;
+			}
+
+			a {
+				img {
+					height: 30px;
+
+					opacity: .2;
+					transition: ease .2s;
+
+					&:hover {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}

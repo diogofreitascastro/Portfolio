@@ -24,6 +24,8 @@ header {
 		&.scrolled {
 			filter: drop-shadow(0 0 5px darken( $bg-color, 2.5%));
 			height: 60px;
+
+			background: darken( $bg-color, 2.5%);
 		}
 
 		.main-menu-left {
@@ -64,15 +66,10 @@ header {
 
 				ul {
 					display: flex;
+					grid-gap: 30px;
 					font-size: .9rem;
 
 					li {
-						margin-right: 30px;
-
-						&:last-child {
-							margin-right: 0;
-						}
-
 						&.active-page,
 						&:hover {
 							border-top: 10px solid $bloo;
