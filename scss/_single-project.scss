@@ -102,6 +102,12 @@
 					flex-flow: column;
 				}
 			}
+
+			&.full {
+				img {
+					max-height: 500px;
+				}
+			}
 		}
 
 		.caption {
