@@ -87,7 +87,9 @@
 			align-items: center;
 
 			img {
-				max-height: 300px;
+				@include mediumScreen {
+					max-height: 300px;
+				}
 			}
 
 			video {
@@ -103,9 +105,20 @@
 				}
 			}
 
-			&.full {
+			&.big {
 				img {
-					max-height: 500px;
+					@include mediumScreen {
+						max-height: 500px;
+					}
+				}
+			}
+
+			&.long {
+				img {
+					@include mediumScreen {
+						max-width: 900px;
+						max-height: none;
+					}
 				}
 			}
 		}
