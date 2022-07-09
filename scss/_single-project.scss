@@ -87,6 +87,8 @@
 			align-items: center;
 
 			img {
+				max-height: 999px;
+				
 				@include mediumScreen {
 					max-height: 300px;
 				}
