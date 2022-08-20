@@ -17,6 +17,10 @@ main {
 
 		.landing-wrapper {
 
+			.bloo {
+				color: $bloo;
+			}
+
 			* {
 				text-align: left;
 			}
@@ -52,6 +56,7 @@ main {
 					font-size: 4rem;
 					line-height: 4rem;
 				}
+
 			}
 
 			a#hire-me {
