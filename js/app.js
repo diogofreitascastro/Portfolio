@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     /* make header smaller on scroll */
 
-    $(window).scroll(function() {    
+    $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 30) {
@@ -22,6 +22,18 @@ $(document).ready(function(){
         } else {
             $(".main-menu, .drop-down-menu").removeClass("scrolled");
         }
+    });
+
+    /* make scroll indicator disappear on scroll */
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 30) {
+            $(".ca3-scroll-down-link").hide();
+        } /*else {
+            $(".scroll-downs").show();
+        }*/
     });
 
 
