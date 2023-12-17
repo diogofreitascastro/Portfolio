@@ -151,8 +151,8 @@ $(".filters li").on('click', function(event){
 	
 	$('.masonry').masonry({
   // options...
-  itemSelector: '.single-image-wrapper',
-  columnWidth: 200
-});
+		itemSelector: '.single-image-wrapper',
+		columnWidth: 200
+	});
 
 });
