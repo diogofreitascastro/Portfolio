@@ -148,5 +148,11 @@ $(".filters li").on('click', function(event){
 		$(".project-grid-card").show();
 	}
 });*/
+	
+	$('.masonry').masonry({
+  // options...
+  itemSelector: '.single-image-wrapper',
+  columnWidth: 200
+});
 
 });

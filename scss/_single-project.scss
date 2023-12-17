@@ -146,6 +146,7 @@
 .masonry {
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: row;
 	grid-gap: 20px;
 
 	.single-image-wrapper {
