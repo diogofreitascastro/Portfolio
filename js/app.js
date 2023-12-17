@@ -148,7 +148,7 @@ $(".filters li").on('click', function(event){
 		$(".project-grid-card").show();
 	}
 });*/
-	
+
 	document.addEventListener("DOMContentLoaded", function() {
 		var grid = document.querySelector('.masonry');
 		var msnry = new Masonry(grid, {
@@ -156,5 +156,4 @@ $(".filters li").on('click', function(event){
 			columnWidth: '.single-image-wrapper',
 		});
 	});
-
 });
