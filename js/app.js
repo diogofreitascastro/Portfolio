@@ -149,10 +149,12 @@ $(".filters li").on('click', function(event){
 	}
 });*/
 	
-	$('.masonry').masonry({
-  // options...
-		itemSelector: '.single-image-wrapper',
-		columnWidth: 200
+	document.addEventListener("DOMContentLoaded", function() {
+		var grid = document.querySelector('.masonry');
+		var msnry = new Masonry(grid, {
+			itemSelector: '.single-image-wrapper',
+			columnWidth: '.single-image-wrapper',
+		});
 	});
 
 });
