@@ -13,12 +13,12 @@
 		.filters {
 			display: flex;
 			font-weight: bold;
-			margin-bottom: 20px;
 			margin-top: 10px;
 
 			ul {
 				display: grid;
 				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 10px;
 				width: 100%;
 				@include filters;
 
@@ -27,8 +27,6 @@
 				}
 
 				li {
-					margin-right: 10px;
-					margin-bottom: 10px;
 					padding: 5px 10px;
 					cursor: pointer;
 					position: relative;
@@ -73,7 +71,6 @@
 		.project-grid-card {
 			.project-image-holder {
 				overflow: hidden;
-				border-radius: 2px;
 
 				img {
 					object-fit: cover;
