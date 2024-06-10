@@ -16,21 +16,29 @@
 			margin-top: 10px;
 
 			ul {
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
+				display: flex;
+				flex-wrap: wrap;
 				grid-gap: 10px;
 				width: 100%;
+				grid-template-columns: repeat(2, 1fr);
 				@include filters;
 
-				@include mediumScreen {
-					grid-template-columns: repeat(4, 1fr);
-				}
+				/* @include mediumScreen {
+					display: flex;
+					grid-template-columns: auto;
+				} */
 
 				li {
 					padding: 5px 10px;
 					cursor: pointer;
 					position: relative;
 					transition: ease .5s;
+					flex-grow: 1;
+					flex-basis: calc(50% - 10px);
+
+					@include mediumScreen {
+						flex-basis: calc(20% - 10px);
+					}
 
 					&::before {
 						content: "";
