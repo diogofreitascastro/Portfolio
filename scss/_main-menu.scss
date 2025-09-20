@@ -112,9 +112,13 @@ header {
 					padding: 13px 30px;
 					height: 50px;
 					width: 100%;
+					&:hover {
+						color: $text-color;
+					}
 				}
 
-				&:hover {
+				&:hover,
+				&:focus {
 					background: $bg-color;
 				}
 			}	
