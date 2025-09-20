@@ -70,10 +70,14 @@ header {
 					font-size: .9rem;
 
 					li {
-						&.active-page,
-						&:hover {
+						&.active-page {
 							border-top: 10px solid $bloo;
 							margin-top: -10px;
+						}
+
+						a:hover,
+						a:focus {
+							color: $text-color;
 						}
 					}
 				}
