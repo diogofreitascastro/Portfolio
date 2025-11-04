@@ -640,18 +640,23 @@ main section.services-megawrapper {
       margin-bottom: 10px; }
 .work-wrapper .text-wrapper p:last-child {
   margin-bottom: 0; }
-.work-wrapper .text-wrapper ul, .work-wrapper .text-wrapper ol {
+.work-wrapper .text-wrapper ul,
+.work-wrapper .text-wrapper ol {
   margin: 0;
   font-size: .8rem; }
   @media (min-width: 768px) {
-    .work-wrapper .text-wrapper ul, .work-wrapper .text-wrapper ol {
+    .work-wrapper .text-wrapper ul,
+    .work-wrapper .text-wrapper ol {
       font-size: .9rem; } }
   @media (min-width: 992px) {
-    .work-wrapper .text-wrapper ul, .work-wrapper .text-wrapper ol {
+    .work-wrapper .text-wrapper ul,
+    .work-wrapper .text-wrapper ol {
       font-size: 1rem; } }
 .work-wrapper .image-and-caption {
   display: grid;
   justify-content: center; }
+  .work-wrapper .image-and-caption:last-child {
+    margin-bottom: 0; }
   .work-wrapper .image-and-caption .image-grid {
     display: flex;
     justify-content: center;
