@@ -79,6 +79,11 @@ header {
 						a:focus {
 							color: $text-color;
 						}
+
+						a:hover {
+							border-top: 10px solid $bloo;
+							margin-top: -10px;
+						}
 					}
 				}
 			}

@@ -138,6 +138,9 @@ header .main-menu {
         header .main-menu .main-menu-left .main-menu-left-2 ul li a:hover,
         header .main-menu .main-menu-left .main-menu-left-2 ul li a:focus {
           color: #f1f1f1; }
+        header .main-menu .main-menu-left .main-menu-left-2 ul li a:hover {
+          border-top: 10px solid #e8a952;
+          margin-top: -10px; }
 header .drop-down-menu {
   display: none;
   width: 100%;
